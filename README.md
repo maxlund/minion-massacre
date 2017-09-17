@@ -1,4 +1,4 @@
-# TDDI22 – Projekt
+# Minion Massacre
 
 
 ## Installation
