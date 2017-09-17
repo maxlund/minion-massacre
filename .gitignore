@@ -30,3 +30,28 @@
 *.exe
 *.out
 *.app
+
+# Emacs
+*~
+\#*\#
+.\#*
+# C++
+*.o
+*.a
+*.gch
+*.out
+*.exe
+
+build/
+# SFML and other libraries
+include/SFML/
+lib/
+share/
+usr/
+include/
+# IDE
+.idea/
+cmake-build-debug/
+_linux/
+codestyles/
+colors.scheme.xml
