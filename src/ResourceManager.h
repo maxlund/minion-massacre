@@ -15,12 +15,12 @@
 class ResourceManager
 {
 public:
-    static sf::Texture* loadTexture(std::string fileName);
-    static sf::Font* loadFont(std::string fileName);
-    static sf::Shader* loadShader(std::string fileName, sf::Shader::Type);
-    static std::map<std::string, sf::Texture*> textures;
-    static std::map<std::string, sf::Font*> fonts;
-    static std::map<std::string, sf::Shader*> shaders;
+   static sf::Texture* loadTexture(std::string fileName);
+   static sf::Font* loadFont(std::string fileName);
+   static sf::Shader* loadShader(std::string fileName, sf::Shader::Type);
+   static std::map<std::string, sf::Texture*> textures;
+   static std::map<std::string, sf::Font*> fonts;
+   static std::map<std::string, sf::Shader*> shaders;
 };
 
 

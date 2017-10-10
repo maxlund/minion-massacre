@@ -18,15 +18,15 @@ Level Game::level{"../res/level.tmx"};
 int main()
 {
    // sf::RenderWindow window{/*sf::VideoMode::getFullscreenModes().at(0) */ sf::VideoMode(840, 640), "Tower Defense" /* sf::Style::Fullscreen */};
-    sf::RenderWindow window{sf::VideoMode::getDesktopMode(), "Tower Defense"/*, sf::Style::Fullscreen*/};
-    Game game{window};
-    sf::Vector2f levelSize{static_cast<float>(Game::getLevel().getWidth()),
-                           static_cast<float>(Game::getLevel().getHeight())};
-    float viewWidth = window.getSize().x * (levelSize.y / window.getSize().y);
-    sf::FloatRect viewRect = sf::FloatRect(-(viewWidth - levelSize.x) / 2, 0, viewWidth, levelSize.y);
-    game.setViewRect(viewRect);
+   sf::RenderWindow window{sf::VideoMode::getDesktopMode(), "Tower Defense"/*, sf::Style::Fullscreen*/};
+   Game game{window};
+   sf::Vector2f levelSize{static_cast<float>(Game::getLevel().getWidth()),
+         static_cast<float>(Game::getLevel().getHeight())};
+   float viewWidth = window.getSize().x * (levelSize.y / window.getSize().y);
+   sf::FloatRect viewRect = sf::FloatRect(-(viewWidth - levelSize.x) / 2, 0, viewWidth, levelSize.y);
+   game.setViewRect(viewRect);
 
-    game.run();
+   game.run();
 
-    return 0;
+   return 0;
 }
