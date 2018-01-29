@@ -19,9 +19,6 @@ add_custom_command(
         ${CMAKE_SOURCE_DIR}/include/SFML/System.hpp
         ${CMAKE_SOURCE_DIR}/include/tinyxml2.h
         ${CMAKE_SOURCE_DIR}/include/tmxparser/Tmx.h
-
-        WORKING_DIRECTORY ../
-        COMMAND rm -rf lib include share tmxparser && ./setup.sh
 )
 
 add_executable(main
