@@ -10,11 +10,11 @@
     
 All dependencies can be downloaded by running `./setup.sh`.
 
-Compile using CMake:
+To install & run:
 ```
-mkdir build && cd build
-cmake ..
-make
+./setup.sh
+cd build
+./main
 ```
 
 Alternative version if the version of GCC pointed to by $PATH is not detected:
