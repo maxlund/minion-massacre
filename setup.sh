@@ -19,9 +19,9 @@ check_distro()
             echo "DEBIAN detected!"
             pm="apt install -y"
             pkgs="libsfml-dev libsfml-doc \
-                libsfml-audio2 libsfml-graphics2 \
-                libsfml-network2 libsfml-system2 \
-                libsfml-windows2 libtinyxml2-dev \
+                libsfml-audio2.3v5 libsfml-graphics2.3v5 \
+                libsfml-network2.3v5 libsfml-system2.3v5 \
+                libsfml-window2.3v5 libtinyxml2-dev \
                 libjpeg62-dev"
             ;;
         *fedora*|*rhel*|*redhat*)
